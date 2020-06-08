@@ -3,14 +3,14 @@
 <head>
     <title>Doctor Secret Room</title>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
-<header th:replace="index.html :: top ">Header TODO</header>
-<section>
+  <header th:replace="fragment/header.html :: top"></header>
+  <section>
     <h1 th:text="| Doctor : ${name} |">Welcome</h1>
     <h3 th:text="| Number : ${number} |">Your number is </h3>
 </section>
-<footer th:replace="index.html :: bottom ">Footer TODO</footer>
+<footer th:replace="fragment/footer.html :: bottom"></footer>
 </body>
 </html>
